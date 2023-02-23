@@ -1,12 +1,10 @@
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Tilt+Prism:300,400,600,700&amp;lang=en" />
-
 body {
-  font-family: Tilt Prism, arial, sans-serif;
+  font-family: Tilt Warp, arial, sans-serif;
   margin: 2em;
 }
 
 h1 {
-  font-style: italic;
+  font-style: bold;
   color: #FF6F00;
 }
 
@@ -21,8 +19,9 @@ video {
 }
 
 button {
+  font-family: Tilt Warp, arial, sans-serif;
   padding: 10px;
-  float: left;
+  float: center;
   margin: 5px 3px 5px 10px;
 }
 
