@@ -1,3 +1,5 @@
+import * as tf from "@tensorflow/tfjs";
+
 const STATUS = document.getElementById("status");
 const VIDEO = document.getElementById("webcam");
 const ENABLE_CAM_BUTTON = document.getElementById("enableCam");
@@ -12,12 +14,13 @@ ENABLE_CAM_BUTTON.addEventListener("click", enableCam);
 TRAIN_BUTTON.addEventListener("click", trainAndPredict);
 RESET_BUTTON.addEventListener("click", reset);
 
+
 /**
  * Loads the MobileNet model and warms it up so ready for use.
  **/
 async function loadMobileNetFeatureModel() {
   const URL ="https://tfhub.dev/google/tfjs-model/imagenet/mobilenet_v3_small_100_224/feature_vector/5/default/1";
-
+  
   mobilenet = await tf.loadGraphModel(URL, { fromTFHub: true });
   STATUS.innerText = "MobileNet v3 loaded successfully!";
 
