@@ -1,4 +1,4 @@
-import * as tf from "@tensorflow/tfjs";
+//import * as tf from "@tensorflow/tfjs@3.11.0/dist/tf.min.js";
 
 const STATUS = document.getElementById("status");
 const VIDEO = document.getElementById("webcam");
