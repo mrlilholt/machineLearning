@@ -13,8 +13,6 @@ const CLASS_NAMES = [];
 ENABLE_CAM_BUTTON.addEventListener("click", enableCam);
 TRAIN_BUTTON.addEventListener("click", trainAndPredict);
 RESET_BUTTON.addEventListener("click", reset);
-
-
 /**
  * Loads the MobileNet model and warms it up so ready for use.
  **/
